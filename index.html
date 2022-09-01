@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTION DE STOCK BIOMEA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/magnific-popup.css"> 
+    <link rel="stylesheet" href="css/templatemo-ocean-vibes.css"> 
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        /* Full-width input fields */
+        input[type=text], input[type=number] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        /* Add a background color when the inputs get focus */
+        input[type=text]:focus, input[type=number]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: #04AA6D;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        button:hover {
+          opacity:1;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          padding: 14px 20px;
+          background-color: #f44336;
+        }
+        
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+          float: left;
+          width: 50%;
+        }
+        
+        /* Add padding to container elements */
+        .container {
+          padding: 16px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: #474e5d;
+          padding-top: 50px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* Style the horizontal ruler */
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+         
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 35px;
+          top: 15px;
+          font-size: 40px;
+          font-weight: bold;
+          color: #f1f1f1;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #f44336;
+          cursor: pointer;
+        }
+        
+        /* Clear floats */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+          .cancelbtn, .signupbtn {
+             width: 100%;
+          }
+        }
+        </style>
+</head>
+<body>
+    <header class="tm-site-header">
+        <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">BIOMEA</span> <span class="tm-color-gray-2"></span></h1>
+        <em class="tm-tagline tm-color-light-gray">GESTION DE STOCK </em>
+    </header>
+
+    <!-- Video banner 400 px height -->
+    <div id="tm-video-container">
+       <img src="video/stok.jpg" alt="">  
+        <i id="tm-video-control-button" class="fas fa-pause"></i>
+    </div>
+    <div class="tm-container">
+        <nav class="tm-main-nav">
+            <ul id="inline-popups">
+                <li class="tm-nav-item">
+                    <a href="fourniss.html" data-effect="mfp-move-from-top" class="tm-nav-link">
+            Enregistrement  fournisseurs
+            <i class="fa fa-user-md" aria-hidden="true"></i>
+                    </a>                
+                </li>
+                <li class="tm-nav-item">
+                    <a href="produit.html" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
+                        Enregistrement des produits
+                      
+                        <i class="fa fa-user-md" aria-hidden="true"></i>
+                    </a>
+                </li>
+                
+                <li class="tm-nav-item">
+                    <a href="jounal.html" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
+                        Journal de stock 
+                        <i class="fa fa-user-md" aria-hidden="true"></i>
+                    </a>
+                </li>
+                
+                <li class="tm-nav-item">
+                    <a href="#about" data-effect="mfp-move-from-top" class="tm-nav-link">
+                         bons de commande
+                         <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="#contact" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Statistiques
+                        <i class="fa fa-signal" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+<!-- formulaire de fournisseur -->
+
+    <footer class="tm-footer">
+        <span>Copyright &copy; 2022 BIOMIA</span>
+        <span> Designed KCcode
+</footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <!-- <script src="js/templatemo-script.js"></script> -->
+</body>
+</html>
